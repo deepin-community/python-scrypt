@@ -1,0 +1,4 @@
+# Only the debian packaging is covered by the GPL, the rest is a 2-clause BSD
+# tell lintian to not complain:
+python3-scrypt: possible-gpl-code-linked-with-openssl
+

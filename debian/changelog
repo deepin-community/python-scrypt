@@ -1,0 +1,107 @@
+python-scrypt (0.8.20-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Take over package maintenance via ITS process. (Closes: #1007801) 
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 29 Mar 2022 22:10:52 -0400
+
+python-scrypt (0.8.19-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * New upstream release.
+  * debian/control:
+    + Add GitHub homepage.
+  * debian/rules: Enable full hardening.
+  * debian/watch: Switch to monitor GitHub upstream instead.
+  * debian/gbp.conf: Added to reflect packaging repo.
+  * debian/copyright: Minor update.
+  * debian/python3-scrypt.docs: Also install README.rst.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 23 Jan 2022 21:05:35 -0500
+
+python-scrypt (0.8.0-0.4) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Rebuild after Debian 11 release.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Add debian/watch file, using pypi.
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Boyuan Yang ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Bump debhelper compat to v13.
+  * Add dependency to libpython3-all-dev for cross compilation.
+    (Closes: #990064)
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 20 Aug 2021 00:07:28 -0400
+
+python-scrypt (0.8.0-0.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * debian/control:
+    + Add explicit build-dependency dh-python. (Closes: #944945)
+    + Bump Standards-Version to 4.4.1.
+    + Bump debhelper compat to v12.
+    + Add Vcs-* fields to use git packaging repo under Salsa
+      DPMT team.
+
+ -- Boyuan Yang <byang@debian.org>  Sat, 07 Dec 2019 13:57:05 -0500
+
+python-scrypt (0.8.0-0.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop python2 support; Closes: #938159
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 19 Oct 2019 14:15:30 -0400
+
+python-scrypt (0.8.0-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * New upstream release (Closes: #877732).
+  * Added Python 3 support (Closes: #742225).
+  * Build-depends: on python{3,}-setuptools.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 05 Oct 2017 17:07:52 +0200
+
+python-scrypt (0.6.1-5.1) unstable; urgency=low
+
+  * NMU: as suggested by Dejan Latinovic there is only a dependency on
+         libssl-dev missing (Closes: #724158)
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Fri, 22 Nov 2013 19:00:24 +0100
+
+python-scrypt (0.6.1-5) unstable; urgency=low
+
+  * Remove dependency on libscrypt0, it requires porting
+
+ -- Micah Anderson <micah@debian.org>  Thu, 22 Aug 2013 16:01:24 -0400
+
+python-scrypt (0.6.1-4) unstable; urgency=low
+
+  * Update debian/copyright to fix missing DEP5 field
+
+ -- Micah Anderson <micah@debian.org>  Tue, 13 Aug 2013 09:37:16 -0400
+
+python-scrypt (0.6.1-3) unstable; urgency=low
+
+  * Fix typo in libscrypt0 package dependency
+
+ -- Micah Anderson <micah@debian.org>  Sat, 10 Aug 2013 21:39:40 +0200
+
+python-scrypt (0.6.1-2) unstable; urgency=low
+
+  * Add missing license information for embedded scrypt
+
+ -- Micah Anderson <micah@debian.org>  Thu, 04 Jul 2013 12:03:29 -0400
+
+python-scrypt (0.6.1-1) unstable; urgency=low
+
+  * Initial package (Closes: #710464)
+
+ -- Micah Anderson <micah@debian.org>  Thu, 30 May 2013 15:30:06 -0400
